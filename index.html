@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+     <!-- AOS Library CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
+    <!-- AOS JS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Typed Js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Ajax AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Flickity JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</head>
+<body>
+<!-- ===== Particles Background Start ===== -->
+ <canvas id="particles-bg"></canvas>
+    <!-- ===== Navbar Section Start ===== -->
+<header class="navbar-wrapper">
+  <div class="container navbar">
+    <div class="logo">Zeeshan<span>Afzal</span></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div id="menuToggle" class="menu-toggle" onclick="toggleMenu()">
+      ☰
+    </div>
+  </div>
+</header>
+<!-- ===== Navbar Section End ===== -->
+
+<!-- ===== Page Section: Hero Start ===== -->
+<section>
+  <div class="page-section hero-section">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Zeeshan Afzal</span></h1>
+      <h2><span id="typed-text"></span></h2>
+      <p>
+        I’m a Front-End Web Developer & UI Designer from Pakistan. I build modern, responsive, and user-friendly websites using HTML, CSS, JavaScript, Bootstrap & Tailwind.
+      </p>
+      <div class="cta-buttons">
+         <a href="https://wa.me/923245351410" class="animated-btn">
+           <span>Hire Me</span>
+           <i class="fas fa-paper-plane"></i>
+         </a>
+
+         <a href="https://drive.google.com/file/d/1BoQOeAa8V8CODj1P_gVJLLfjx55miKbi/view?usp=drivesdk" class="animated-btn">
+           <span>Download CV</span>
+           <i class="fas fa-cloud-download-alt"></i>
+         </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======= Hero Section End ======= -->
+
+<!-- ===== About Section Start ===== -->
+<section href="#about" class="section-wrapper about-section">
+  <div class="container about">
+    <div class="about-image">
+      <img src="/assets/media/Zeeshan-img.jpg" alt="Zeeshan Afzal" data-aos="fade-right" data-aos-duration="1000">
+    </div>
+    <div class="about-content">
+      <h2>About <span>Me</span></h2>
+      <p>
+        I'm <strong>Zeeshan Afzal</strong>, a self-taught Front-End Developer with a passion for creating digital experiences that are not just beautiful — but powerful. <br><br>
+        For the past 2 years, I've crafted responsive websites, landing pages, and UI components using <strong>HTML, CSS, Tailwind, Bootstrap, React, and JavaScript</strong> — blending clean code with clean design. <br><br>
+        I don’t just build websites, I shape <strong>user journeys</strong> that leave a lasting impression. Whether it’s a bold brand, a sleek portfolio, or a product launch — I help ideas come to life on screen. <br><br>
+        I believe that elegance lies in simplicity, and I apply that principle in every line of code I write. Currently, I'm learning <strong>Python</strong> to elevate my skills and deliver more dynamic, scalable web applications. <br><br>
+        Let’s turn vision into visuals — and clicks into clients.
+      </p>
+      <a href="https://wa.me/923245351410" class="animated-btn">
+          <span>Send Message</span>
+          <i class="fas fa-paper-plane"></i>
+      </a> 
+    </div>
+  </div>
+</section>
+<!-- ===== About Section End ===== -->
+
+<!-- ===== Services Section Start ===== -->
+ 
+<section>
+<!-- Services Section -->
+<section class="services-section">
+  <h2 class="section-title">My Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>HTML</h3>
+      <h4>100%</h4>
+      <div class="progress-bar" data-skill="html"><div class="progress"></div></div>
+      <button class="view-btn" data-skill="html">View Details</button>
+    </div>
+
+    <div class="service-card">
+      <h3>CSS</h3>
+      <h4>100%</h4>
+      <div class="progress-bar" data-skill="css"><div class="progress"></div></div>
+      <button class="view-btn" data-skill="css">View Details</button>
+    </div>
+
+    <div class="service-card">
+      <h3>Bootstrap</h3>
+      <h4>100%</h4>
+      <div class="progress-bar" data-skill="bootstrap"><div class="progress"></div></div>
+      <button class="view-btn" data-skill="bootstrap">View Details</button>
+    </div>
+
+    <div class="service-card">
+      <h3>Tailwind CSS</h3>
+      <h4>100%</h4>
+      <div class="progress-bar" data-skill="tailwind"><div class="progress"></div></div>
+      <button class="view-btn" data-skill="tailwind">View Details</button>
+    </div>
+
+    <div class="service-card">
+      <h3>JavaScript</h3>
+      <h4>100%</h4>
+      <div class="progress-bar" data-skill="js"><div class="progress"></div></div>
+      <button class="view-btn" data-skill="js">View Details</button>
+    </div>
+
+    <div class="service-card">
+      <h3>React</h3>
+      <h4>90%</h4>
+      <div class="progress-bar" data-skill="react"><div class="progress"></div></div>
+      <button class="view-btn" data-skill="react">View Details</button>
+    </div>
+  </div>
+
+<!-- Popup Modal -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <span id="closePopup">&times;</span>
+    <h2 id="popupTitle"></h2>
+    <p id="popupText"></p>
+  </div>
+</div>
+</section>
+
+<!-- ===== Services Section End ===== -->
+
+<!-- ===== Portfolio Section Start ===== -->
+<section class="projects-section">
+  <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+  <div class="container">
+    <div class="projects-grid">
+      <!-- Project 1: HTML/CSS Portfolio -->
+      <div class="project-card" data-aos="zoom-in">
+        <img src="/assets/media/HTML-CSS-portfolio-Homepage.PNG" alt="HTML CSS Portfolio" />
+        <h3>HTML/CSS Portfolio</h3>
+        <p>A clean and responsive portfolio built using only HTML and CSS.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span></div>
+        <div class="links">
+          <a href="https://your-html-css-portfolio-live-link.com" target="_blank" class="btn-gold">View Live</a>
+          <a href="https://github.com/Zeeshu303" target="_blank" class="btn-dark">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 2: Tailwind Portfolio -->
+      <div class="project-card" data-aos="zoom-in">
+        <img src="/assets/media/Tailwind-portfolio-project-homepage.PNG" alt="Tailwind Portfolio" />
+        <h3>Tailwind Portfolio</h3>
+        <p>A fully responsive and stylish portfolio using Tailwind CSS.</p>
+        <div class="tags"><span>Tailwind</span><span>JavaScript</span></div>
+        <div class="links">
+          <a href="https://tailwind-portfolio-zee.netlify.app/" target="_blank" class="btn-gold">View Live</a>
+          <a href="https://github.com/Zeeshu303" target="_blank" class="btn-dark">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 3: Bootstrap Portfolio -->
+      <div class="project-card" data-aos="zoom-in">
+        <img src="/assets/media/ThemeBau-Website-using-Bootstrap5.PNG" alt="Bootstrap Portfolio" />
+        <h3>ThemeBau Clone Website</h3>
+        <p>Elegant ThemeBau Website clone made with Bootstrap 5 and smooth animations.</p>
+        <div class="tags"><span>Bootstrap</span><span>HTML</span><span>CSS</span></div>
+        <div class="links">
+          <a href="https://your-bootstrap-portfolio-live-link.com" target="_blank" class="btn-gold">View Live</a>
+          <a href="https://github.com/Zeeshu303" target="_blank" class="btn-dark">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 4: JavaScript ToDo List -->
+      <div class="project-card" data-aos="zoom-in">
+        <img src="/assets/media/To-Do List.PNG" alt="JavaScript ToDo App" />
+        <h3>ToDo List App</h3>
+        <p>A task management app built using vanilla JavaScript and local storage.</p>
+        <div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+        <div class="links">
+          <a href="https://your-todo-app-live-link.com" target="_blank" class="btn-gold">View Live</a>
+          <a href="https://github.com/Zeeshu303" target="_blank" class="btn-dark">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+<!-- Testimonials -->
+ <div class="home-testimonials" data-aos="fade-up" data-aos-duration="1000">
+    <div class="home-testimonials-title">
+        <h2>Customer Review's on Fiverr</h2>
+        <h1>Testimonials</h1>
+    </div>
+    <div class="testimonial" data-flickity>
+        <div class="testimonial-cell">
+            <div class="testimonial-watch-img-1"></div>
+            <div class="testimonial-star-rating"></div>
+            <div class="testimonial-content">
+                <p>“Zeeshan is not just a talented developer, but someone who understands how to assist under pressure.
+                   I simply asked for a template, yet he analyzed the problem, improved the logic, and delivered a visually clean,
+                   well-structured solution. His initiative and creativity reflect real expertise.”
+                </p>
+                    <h3>– R. Khan (Netherlands)</h3>
+            </div>
+        </div>
+        <div class="testimonial-cell">
+            <div class="testimonial-watch-img-1"></div>
+            <div class="testimonial-star-rating"></div>
+            <div class="testimonial-content">
+                <p>“Super responsive and accurate work. Zeeshan followed requirements perfectly and delivered exactly what I needed within a day. 
+                   His attention to detail is remarkable!”
+                </p>
+                    <h3>– sevenate7 (Canada)</h3>
+            </div>
+        </div>
+        <div class="testimonial-cell">
+            <div class="testimonial-watch-img-1"></div>
+            <div class="testimonial-star-rating"></div>
+            <div class="testimonial-content">
+                <p>
+                  “Amazing work! Everything was delivered professionally and right on time. The structure and presentation exceeded expectations.
+                   Highly recommended.”
+                </p>
+                    <h3>– swagyomama (Canada)</h3>
+            </div>
+        </div>
+        <div class="testimonial-cell">
+            <div class="testimonial-watch-img-1"></div>
+            <div class="testimonial-star-rating"></div>
+            <div class="testimonial-content">
+                <p>
+                  “Zeeshan did a great job! Clean, efficient, and clear communication throughout the project. Will surely work again.”
+                </p>
+                    <h3>– nawafali_ (Saudi Arabia)</h3>
+            </div>
+        </div>
+        <div class="testimonial-cell">
+            <div class="testimonial-watch-img-1"></div>
+            <div class="testimonial-star-rating"></div>
+            <div class="testimonial-content">
+                <p>
+                  “Asked and was delivered on time. Zeeshan is straightforward, gets the work done, and doesn’t overcomplicate things. Very professional!”
+                </p>
+                    <h3>– eric81468 (Australia)</h3>
+            </div>
+        </div>
+      </div>
+ </div>
+<section>
+
+<section>
+  <h2 class="contact-title">Contact Me</h2>
+  <p class="contact-description">Have a project in mind or just want to say hello? I’d love to hear from you! Fill out the form below and let’s connect.</p>
+<div class="contact-section">
+  <div class="contact-card">
+    <h2>Let’s Work Together</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">
+        Send via WhatsApp
+        <i class="fa-brands fa-whatsapp"></i>
+      </button>
+    </form>
+  </div>
+</div>
+</section>
+
+<footer class="footer-section">
+  <div class="footer-container">
+    <h2 class="footer-title">Zeeshan Afzal</h2>
+    <p class="footer-tagline">Turning Ideas into Reality with Code & Creativity</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/Zeeshu303" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/zeeshan-afzal-6572b1318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+       target="_blank"><i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://wa.me/923245351410" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <p class="footer-copy">© 2025 Zeeshan Afzal | All Rights Reserved</p>
+    <button id="scrollToTopBtn" title="Go to top">⬆️</button>
+  </div>
+</footer>
+
+
+
+
+
+
+<!-- JavaScript -->
+    <script src="assets/JavaScript/index.js"></script>
+
+      <script>
+       AOS.init();
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>
