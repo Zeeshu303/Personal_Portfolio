@@ -1,2 +1,10 @@
 # Personal_Portfolio
-This Portfolio is created using HTML, CSS and JavaScript
+This personal portfolio website was designed and developed using HTML, Tailwind CSS, and JavaScript with a strong focus on luxury aesthetics, advanced animations, and modern UI/UX design principles. The hero section features a stunning animated typing effect, interactive glowing buttons, and a dynamic particle.js background that adds a visually captivating layer of depth. The "Hire Me" button is directly linked to WhatsApp via API, allowing instant client interaction, while the "Download CV" button is wrapped in a smooth golden glow animation that adds a premium feel.
+
+The About section includes animated skill progress bars, filled dynamically using JavaScript. Each skill also features a “View Details” button, which triggers a modal popup with more in-depth information, styled with fade-in/fade-out animations. These popups enhance interactivity and create a polished user experience.
+
+In the Services section, each card is designed with a luxury-themed gradient, hover-responsive animations, and modern icon integration. Smooth transitions and motion effects are added using Tailwind CSS and JavaScript to bring the content to life. The Projects section uses a responsive grid layout, displaying each project card with hover animations, including border transitions and stylish buttons. For mobile devices, the layout seamlessly adjusts to a single-column view for better readability and usability.
+
+The Contact section stands out with a visually rich dark gradient background. Input fields are styled with glowing effects, and upon submission, the user is redirected to WhatsApp with a pre-filled message for instant communication. The footer ties everything together with elegant gradient lines, animated social media icons, and a clean layout that maintains the luxury feel till the end.
+
+Throughout the site, AOS (Animate On Scroll) library is used to apply smooth scroll-triggered animations, giving each element a sleek entrance as the user navigates. A full set of media queries ensures that the website is fully responsive, adapting every section for mobile, tablet, and desktop screens with perfect alignment and typography balance.
